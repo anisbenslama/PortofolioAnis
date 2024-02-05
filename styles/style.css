@@ -1,0 +1,349 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+:root{
+  --bgColor : #080e1c; 
+  --TextWhite : #fff; 
+}
+
+.white-theme{
+  --bgColor : #fff; 
+  --TextWhite : #080e1c; 
+}
+
+.hero{
+  background: var(--bgColor);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero header nav {
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+}
+
+.hero header nav .logo {
+  color: var(--TextWhite);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.hero header nav .logo span {
+  color: cornflowerblue;
+}
+
+.hero header nav .nav-links a {
+color: var(--TextWhite);
+margin: 0 30px;
+transition: 0.3s;
+}
+
+.hero header nav .nav-links a:hover{
+  color: cornflowerblue;
+}
+
+.hero header nav .btn-mode {
+  color: var(--TextWhite);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.hero .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.hero .container .div-text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero .container .div-img {
+  position: absolute;
+  width: 34%;
+  bottom: -5px;
+  
+}
+
+.hero .container .div-img img {
+  width: 100%;
+}
+
+.hero .container .div-text h4 {
+  color:chocolate;
+  font-size: 22px;
+}
+
+.hero .container .div-text h1{
+  color: var(--TextWhite);
+  font-size: 60px;
+  margin: 15px 0 10px;
+}
+
+.hero .container .div-text span {
+  color: cornflowerblue;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hero .container .div-text p {
+  color: var(--TextWhite);
+  line-height: 1.8;
+  margin: 20px 0 40px;
+}
+.hero .container .div-text .btn {
+  color: #fff;
+  background: cornflowerblue;
+  padding: 15px 30px;
+  border: 1px solid cornflowerblue;
+  position: relative;
+  top: 0;
+  transition: 0.3s;
+}
+
+.hero .container .div-text .btn:hover{
+  top: -8px;
+  box-shadow: 0 0 16px orangered;
+}
+
+.social-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.social-icon a{
+  color: cornflowerblue;
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.social-icon a:hover {
+  transform: scale(1.2);
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--bgColor);
+  padding-bottom: 6rem;
+}
+
+.heading{
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+span {
+  color: cornflowerblue;
+
+}
+
+.about-img{
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img  {
+  width: 90%;
+  border-radius: 50%;
+  border: .2rem solid var(--TextWhite);
+}
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: .2rem solid cornflowerblue;
+  border-bottom: .2rem solid cornflowerblue;
+  border-left: .2rem solid var(--TextWhite);
+  border-right:  .2rem solid var(--TextWhite);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+  color: var(--TextWhite);
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  color: var(--TextWhite);
+}
+
+.btn-box .btns {
+  display: inline-block;
+  width: 15em;
+}
+
+.btn-box.btns a::before {
+  background-color: aqua;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+  background: var(--bgColor);
+}
+
+.education .education-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.education-row .education-coloumn {
+  flex: 1 1 40rem;
+}
+
+.education-coloumn .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
+}
+
+.education-coloumn .education-box {
+  border-left: .2rem solid firebrick;
+}
+
+.education-box .education-content {
+  position: relative;
+  padding: 2px;
+}
+
+.education-content content {
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--TextWhite);
+  border-radius: 6px;
+  margin-bottom: 2px;
+}
+
+.skills{
+  background: var(--bgColor);
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+
+.skills-content h3{
+
+ text-align: center;
+ margin: 5px;
+ width: 500px;
+ color: #fff;
+ padding: 20px;
+ box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0,0.22 ); 
+}
+
+.skills .li {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0,0.22);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg , rgba(236,0,140, 1)0% , rgba(252,103,103,1)100%);
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+
+.css {
+  width: 70%;
+  animation: css 3s;
+}
+
+.symfony {
+  width: 60%;
+  animation: symfony 3s;
+}
+
+.javascript {
+  width: 75%;
+  animation: javascript 3s;
+}
+
+.nodejs {
+  width: 80%;
+  animation: nodejs 3s;
+}
+
+.expressjs {
+  width: 80%;
+  animation: expressjs 3s;
+}
+
+.angular {
+  width: 70%;
+  animation: angular 3s;
+}
+
+.footer a{
+  background: var(--bgColor);
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
